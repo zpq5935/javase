@@ -1,0 +1,2 @@
+重定向首次测试
+book.unit15_io.io.IOTest@5e8c92f4

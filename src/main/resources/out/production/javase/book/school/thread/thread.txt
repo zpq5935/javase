@@ -1,0 +1,52 @@
+5状态：
+	1.新建状态
+	2.就绪状态
+	3.运行状态
+		在以下情况会让出cpu的控制权：
+			1.线程运行完毕
+			2.有比当前线程优先级更高的线程处于就绪状态
+			3.线程主动睡眠一段时间
+			4.线程在等待某一资源
+	4.阻塞状态
+		以下情况
+			1.调用sleep()方法或是yield()方法
+			2.为等待某一条件变量，调用wait()方法
+			3.该线程与另一线程join()在一起
+	5.消亡状态
+	
+分时模式
+抢占模式
+java为抢占调度模式
+
+/**
+	 * 构造方法
+	 * 	1.public Thread()
+	 * 	2.public Thread(String name)
+	 * 	3.public Thread(Runnable target)
+	 * 	4.public Thread(Runnable target, String name)
+	 * 常用方法
+	 * 	1.public static Thread currentThread()
+	 * 	2.final String getName()
+	 * 	3.void start()
+	 * 	4.void run()
+	 * 	5.final boolean isAlive()
+	 * 	6.void interrupt()
+	 * 	7.static boolean isInterrupted()
+	 * 	8.final void join()
+	 * 	9.final int getPriority()
+	 * 	10.final void setPriority(int newPriority)
+	 * 	11.static void sleep(long mills)
+	 * 	12.static void yield()
+	 * 
+	 * @author zcp
+	 *
+	 */
+	 
+共享数据：	线程间对内存数据的共享
+线程的同步：	在共享数据的基础上，解决线程同时处理数据出现的不一致提出的解决方法
+	 
+	 
+	 
+	 
+	 
+	 

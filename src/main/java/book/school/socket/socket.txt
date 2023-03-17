@@ -1,0 +1,38 @@
+4层：
+	链路层
+	网络层（IP层）
+	传输层：Tcp，Udp协议
+	应用层：Http，Ftp协议等
+	
+Socket：主机地址+端口号
+
+URL:	传输协议://主机名:端口号/文件名#引用
+	1.传输协议：	应用层协议如Http，Ftp
+	2.主机名：	可以是IP地址，也可以是计算机的名称或域名
+	3.端口号：	即是端口号，如3306
+	4.文件名：	包含文件的完成路径
+	5.引用（Reference）：		对资源内部的某个参考点
+
+Java具有3中层次的网络通信
+	1.从网络上下载小程序Applet
+	2.通过URl类的对象指明文件位置，并从网络上下载资源
+	3.利用java.net包提供的类直接在程序中实现网络通信
+	
+四大类：
+	URL：			面向应用层，通过URL，Java程序可以输出或读取网络上的数据
+	InetAddress：	面向IP层，用于标识网络上的硬件资源
+	Socket和Datagram	：面向传输层，Socket使用Tcp协议，Datagram使用Udp协议
+
+Java使用java.net包下的类主要为：
+	面向IP层的类：InetAddress
+	面向应用层的类：URL，URLConnection
+	TCP协议相关类：Socket，ServerSocket
+	UDP协议相关类：DatagramPacket，DatagramSocket，MulticastSocket
+
+
+
+
+
+
+
+
