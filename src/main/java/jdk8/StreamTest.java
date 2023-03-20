@@ -1,6 +1,7 @@
 package jdk8;
 
 import book.fengkuang.unit10_exception.ExceptionTest;
+import book.fengkuang.unit18_reflect.jdkproxy.Student;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -119,16 +120,16 @@ public class StreamTest {
     }
 
 
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class Student {
+        private String name;
+        private Integer age;
+        private Boolean male;
+        private List<String> interests;
+
+
+    }
 }
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-class Student {
-    private String name;
-    private Integer age;
-    private Boolean male;
-    private List<String> interests;
-
-
-}
