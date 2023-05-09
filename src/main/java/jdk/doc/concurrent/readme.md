@@ -25,7 +25,7 @@ locks包
 2. AbstractQueuedLongSynchronizer
 3. AbstractQueuedSynchronizer
 4. Condition
-5. Lock
+5. ~~Lock~~
 6. LockSupport
 7. ReadWriteLock
 8. ReentrantLock
@@ -92,5 +92,5 @@ locks包
 57. ThreadLocalRandom
 58. ThreadPoolExecutor
 59. TimeoutException
-60. TimeUnit
+60. ~~TimeUnit~~
 61. TransferQueue
