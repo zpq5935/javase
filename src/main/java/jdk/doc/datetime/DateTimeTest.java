@@ -1,4 +1,4 @@
-package jdk8.doc.datetime;
+package jdk.doc.datetime;
 
 import org.junit.Test;
 

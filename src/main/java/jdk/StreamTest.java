@@ -1,7 +1,5 @@
-package jdk8;
+package jdk;
 
-import book.fengkuang.unit10_exception.ExceptionTest;
-import book.fengkuang.unit18_reflect.jdkproxy.Student;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,15 +17,24 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamTest {
+
+    static final int FLAG_MASK_IS = 0b00000000000000000000000001010101;
+    static final int FLAG_MASK_NOT = 0b00000000000000000000000010101010;
+    private static int getMask(int flags) {
+        return (flags == 0)
+                ? 0
+                : ~(flags | ((FLAG_MASK_IS & flags) << 1) | ((FLAG_MASK_NOT & flags) >> 1));
+    }
+
+    @Test
+    public void testGetMask(){
+        System.out.println(Integer.toBinaryString(getMask(0b01 << 14)));
+    }
+
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
 
-        Stream<Integer> iterate = Stream.of(1, 2, 3, 4, 5, 2, 3, 4, 11);
-        iterate.forEach(System.out::println);
-        try {
-            justThrowException();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        List<Integer> iterate = Stream.of(1, 2, 3, 4, 5, 2, 3, 4, 11).collect(Collectors.toList());
+        iterate.stream().forEach(System.out::println);
 //        .filter(ele -> {
 //            System.out.println("this is filter 1:" + ele);
 //            if ((ele & 1) == 0)
@@ -40,9 +47,6 @@ public class StreamTest {
 
     }
 
-    private static void justThrowException() throws IOException {
-        Objects.requireNonNull(null);
-    }
 
     @Test
     public void justTest() throws Exception {
