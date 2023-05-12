@@ -57,9 +57,9 @@ locks包
 18. ConcurrentSkipListSet
 19. CopyOnWriteArrayList
 20. CopyOnWriteArraySet
-21. CountDownLatch
+21. ~~CountDownLatch~~
 22. CountedCompleter
-23. CyclicBarrier
+23. ~~CyclicBarrier~~
 24. Delayed
 25. DelayQueue
 26. Exchanger
