@@ -21,14 +21,18 @@ atomic包
 
 ---
 locks包
-1. AbstractOwnableSynchronizer
-2. AbstractQueuedLongSynchronizer
+1. ~~AbstractOwnableSynchronizer~~
+2. ~~AbstractQueuedLongSynchronizer~~
+   1. 东西太多，还是看不太懂
+   2. 力求做到
+      1. 了解整体结构，全部方法源码大概过一遍；能应付面试 / 对平时开发设计有所裨益
+      2. 在使用其各种实现时，能熟练使用
 3. AbstractQueuedSynchronizer
 4. ~~Condition~~
 5. ~~Lock~~
 6. ~~LockSupport~~
 7. ReadWriteLock
-8. ReentrantLock
+8. ~~ReentrantLock~~
 9. ReentrantReadWriteLock
 10. StampedLock
 
