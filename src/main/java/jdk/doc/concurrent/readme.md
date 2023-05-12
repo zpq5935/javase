@@ -31,7 +31,7 @@ locks包
 4. ~~Condition~~
 5. ~~Lock~~
 6. ~~LockSupport~~
-7. ReadWriteLock
+7. ~~ReadWriteLock~~
 8. ~~ReentrantLock~~
 9. ReentrantReadWriteLock
 10. StampedLock
@@ -89,7 +89,7 @@ locks包
 50. ScheduledExecutorService
 51. ScheduledFuture
 52. ScheduledThreadPoolExecutor
-53. Semaphore
+53. ~~Semaphore~~
 54. ~~SubmissionPublisher（非jdk8）~~
 55. SynchronousQueue
 56. ThreadFactory
