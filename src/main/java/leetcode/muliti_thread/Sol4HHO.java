@@ -17,39 +17,31 @@ public class Sol4HHO {
 
     }
 
+
     public void beginWithTwoThread(String input, HHO sol) {
-        CountDownLatch countDownLatch = new CountDownLatch(1);
-        AtomicInteger oCount = new AtomicInteger(1);
-        AtomicInteger hCount = new AtomicInteger(1);
-        new Thread(() -> {
-            try {
-                countDownLatch.await();
-                for (int i = 0; i < input.length() / 3 * 2; i++) {
-                    sol.hydrogen(() -> {
-                        System.out.print("H");
-                    });
-                }
-
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+        for (int i = 0; i < input.length(); i++) {
+            if ('H' == input.charAt(i)) {
+                new Thread(()->{
+                    try {
+                        sol.hydrogen(()->{
+                            System.out.print("H");
+                        });
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                }).start();
+            } else {
+                new Thread(()->{
+                    try {
+                        sol.oxygen(()->{
+                            System.out.print("O");
+                        });
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                }).start();
             }
-        }, "Thread H-" + hCount.getAndIncrement()).start();
-        new Thread(() -> {
-            try {
-                countDownLatch.await();
-                for (int i = 0; i < input.length() / 3; i++) {
-                    sol.oxygen(() -> {
-                        System.out.print("O");
-                    });
-                }
-
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }, "Thread O-" + oCount.getAndIncrement()).start();
-        countDownLatch.countDown();
-//        System.in.read();
-//        System.out.println();
+        }
     }
 
     public void beginWithMultiThread(String input, HHO sol) {
