@@ -38,9 +38,10 @@ locks包
 
 ---
 1. AbstractExecutorService
-2. ArrayBlockingQueue
+2. ~~ArrayBlockingQueue~~
+   1. 内部的一些复杂实现没看，比如迭代器
 3. BlockingDeque
-4. BlockingQueue
+4. ~~BlockingQueue~~
 5. BrokenBarrierException
 6. Callable
 7. CancellationException
