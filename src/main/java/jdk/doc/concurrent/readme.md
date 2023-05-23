@@ -40,7 +40,7 @@ locks包
 1. AbstractExecutorService
 2. ~~ArrayBlockingQueue~~
    1. 内部的一些复杂实现没看，比如迭代器
-3. BlockingDeque
+3. ~~BlockingDeque~~
 4. ~~BlockingQueue~~
 5. BrokenBarrierException
 6. Callable
@@ -76,7 +76,7 @@ locks包
 36. Future
 37. FutureTask
 38. ~~Helpers（非jdk8）~~
-39. LinkedBlockingDeque
+39. ~~LinkedBlockingDeque~~
 40. LinkedBlockingQueue
 41. LinkedTransferQueue
 42. Phaser
