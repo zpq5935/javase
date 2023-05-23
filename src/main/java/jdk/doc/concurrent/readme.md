@@ -42,8 +42,8 @@ locks包
    1. 内部的一些复杂实现没看，比如迭代器
 3. ~~BlockingDeque~~
 4. ~~BlockingQueue~~
-5. BrokenBarrierException
-6. Callable
+5. ~~BrokenBarrierException~~
+6. ~~Callable~~
 7. CancellationException
 8. CompletableFuture
 9. CompletionException
@@ -65,10 +65,10 @@ locks包
 25. DelayQueue
 26. Exchanger
 27. ExecutionException
-28. Executor
+28. ~~Executor~~
 29. ExecutorCompletionService
 30. Executors
-31. ExecutorService
+31. ~~ExecutorService~~
 32. ~~Flow（非jdk8）~~
 33. ForkJoinPool
 34. ForkJoinTask
@@ -93,7 +93,7 @@ locks包
 53. ~~Semaphore~~
 54. ~~SubmissionPublisher（非jdk8）~~
 55. SynchronousQueue
-56. ThreadFactory
+56. ~~ThreadFactory~~
 57. ThreadLocalRandom
 58. ThreadPoolExecutor
 59. ~~TimeoutException~~
