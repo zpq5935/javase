@@ -94,26 +94,43 @@ public class ExecutorsTest {
     }
 
     /**
-     * newSingleThreadScheduledExecutor
-     *
-     * @param
-     * @return void
-     * @desc 测试调度线程池
-     * @author zhangchaopei
-     * @date 2020-9-10 16:33
+     * scheduleWithFixedDelay 需等待前一个结束后 再等待 delay*TimeUnit
+     * @throws Exception
      */
     @Test
-    public void testScheduleExecutorsService() throws InterruptedException {
+    public void scheduleWithFixedDelay() throws Exception {
         ScheduledExecutorService threadPool = Executors.newScheduledThreadPool(5);
-        for (int i = 0; i < 10; i++)
-            threadPool.scheduleAtFixedRate(() -> {
-                System.out.println(Thread.currentThread().getName() + " Start");
-                String timeStr = new SimpleDateFormat("HH:mm:ss").format(new Date());
-                System.out.println(timeStr + "线程：【" + Thread.currentThread().getName() + "】，");
-                System.out.println(Thread.currentThread().getName() + " End");
+        threadPool.scheduleWithFixedDelay(() -> {
+            String timeStr = new SimpleDateFormat("HH:mm:ss").format(new Date());
+            System.out.println(timeStr + "线程：【" + Thread.currentThread().getName() + "】，");
+            try {
+                Thread.sleep(1000 * 2);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }, 0, 3, TimeUnit.SECONDS);
 
-            }, 2, 2, TimeUnit.SECONDS);
-        Thread.sleep(60 * 1000);
+        System.in.read();
+    }
+
+    /**
+     * testScheduleWithFixRate 需等待前一个结束后 再等待 (delay*TimeUnit)减去前一个任务所耗费的时间（若小于等于0，则立即执行亦为只等待前一个任务所耗费时间）
+     * @throws Exception
+     */
+    @Test
+    public void testScheduleWithFixRate() throws Exception {
+        ScheduledExecutorService threadPool = Executors.newScheduledThreadPool(5);
+        threadPool.scheduleAtFixedRate(() -> {
+            String timeStr = new SimpleDateFormat("HH:mm:ss").format(new Date());
+            System.out.println(timeStr + "线程：【" + Thread.currentThread().getName() + "】，");
+            try {
+                Thread.sleep(1000 * 3);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }, 0, 2, TimeUnit.SECONDS);
+
+        System.in.read();
     }
 
 
