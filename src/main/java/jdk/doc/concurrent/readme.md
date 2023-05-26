@@ -37,7 +37,7 @@ locks包
 10. StampedLock
 
 ---
-1. AbstractExecutorService
+1. ~~AbstractExecutorService~~
 2. ~~ArrayBlockingQueue~~
    1. 内部的一些复杂实现没看，比如迭代器
 3. ~~BlockingDeque~~
@@ -47,7 +47,7 @@ locks包
 7. CancellationException
 8. CompletableFuture
 9. CompletionException
-10. CompletionService
+10. ~~CompletionService~~
 11. CompletionStage
 12. ConcurrentHashMap
 13. ConcurrentLinkedDeque
@@ -66,14 +66,14 @@ locks包
 26. Exchanger
 27. ExecutionException
 28. ~~Executor~~
-29. ExecutorCompletionService
+29. ~~ExecutorCompletionService~~
 30. Executors
 31. ~~ExecutorService~~
 32. ~~Flow（非jdk8）~~
 33. ForkJoinPool
 34. ForkJoinTask
 35. ForkJoinWorkerThread
-36. Future
+36. ~~Future~~
 37. ~~FutureTask~~
 38. ~~Helpers（非jdk8）~~
 39. ~~LinkedBlockingDeque~~
@@ -85,7 +85,7 @@ locks包
 45. RecursiveTask
 46. RejectedExecutionException
 47. RejectedExecutionHandler
-48. RunnableFuture
+48. ~~RunnableFuture~~
 49. RunnableScheduledFuture
 50. ScheduledExecutorService
 51. ScheduledFuture
