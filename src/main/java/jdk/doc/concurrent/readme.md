@@ -67,7 +67,7 @@ locks包
 27. ExecutionException
 28. ~~Executor~~
 29. ~~ExecutorCompletionService~~
-30. Executors
+30. ~~Executors~~
 31. ~~ExecutorService~~
 32. ~~Flow（非jdk8）~~
 33. ForkJoinPool
@@ -95,7 +95,8 @@ locks包
 55. SynchronousQueue
 56. ~~ThreadFactory~~
 57. ThreadLocalRandom
-58. ThreadPoolExecutor
+58. ~~ThreadPoolExecutor~~
+    1. 看情况招聘工人，让工人一直自觉去领任务，在某些情况下需要辞退工人
 59. ~~TimeoutException~~
 60. ~~TimeUnit~~
 61. TransferQueue
