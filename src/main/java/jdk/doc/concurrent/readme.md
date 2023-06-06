@@ -56,8 +56,9 @@ locks包
 16. ConcurrentNavigableMap
 17. ConcurrentSkipListMap
 18. ConcurrentSkipListSet
-19. CopyOnWriteArrayList
-20. CopyOnWriteArraySet
+19. ~~CopyOnWriteArrayList~~
+20. ~~CopyOnWriteArraySet~~
+    1. 用 ReentrantLock在修改数据集上内部的Object数据总是创建新的数组（相比与常用的ArrayList，它会在适当的时间扩容）
 21. ~~CountDownLatch~~
 22. CountedCompleter
 23. ~~CyclicBarrier~~
