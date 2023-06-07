@@ -49,9 +49,12 @@ locks包
 9. CompletionException
 10. ~~CompletionService~~
 11. CompletionStage
-12. ConcurrentHashMap
+12. ~~ConcurrentHashMap~~
+    1. 没心情看过去，6k行。。。，大概看了下头部的那部分文档
 13. ConcurrentLinkedDeque
-14. ConcurrentLinkedQueue
+14. ~~ConcurrentLinkedQueue~~
+    1. 头尾节点默认创建都是带null元素的node（因此存在特殊操作，首次新增/移除并不会立马）
+    2. 自旋+CAS
 15. ConcurrentMap
 16. ConcurrentNavigableMap
 17. ConcurrentSkipListMap
