@@ -9,8 +9,8 @@
 7. ~~AnnotatedWildcardType~~
 8. ~~Array~~
 9. Constructor
-10. Executable
-11. Field
+10. ~~Executable~~
+11. ~~Field~~
 12. ~~GenericArrayType~~
 13. GenericDeclaration
 14. GenericSignatureFormatError
@@ -18,9 +18,9 @@
 16. InvocationTargetException
 17. MalformedParameterizedTypeException
 18. MalformedParametersException
-19. Member
+19. ~~Member~~
 20. Method
-21. Modifier
+21. ~~Modifier~~
 22. Parameter
 23. ~~ParameterizedType~~
 24. Proxy
