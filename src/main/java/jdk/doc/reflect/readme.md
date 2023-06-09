@@ -1,13 +1,13 @@
 # java.util.reflect 源码阅读
 
-1. AccessibleObject
-2. AnnotatedArrayType
+1. ~~AccessibleObject~~
+2. ~~AnnotatedArrayType~~
 3. ~~AnnotatedElement~~
-4. AnnotatedParameterizedType
-5. AnnotatedType
-6. AnnotatedTypeVariable
-7. AnnotatedWildcardType
-8. Array
+4. ~~AnnotatedParameterizedType~~
+5. ~~AnnotatedType~~
+6. ~~AnnotatedTypeVariable~~
+7. ~~AnnotatedWildcardType~~
+8. ~~Array~~
 9. Constructor
 10. Executable
 11. Field
