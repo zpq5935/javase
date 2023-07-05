@@ -8,7 +8,7 @@
 6. ~~AnnotatedTypeVariable~~
 7. ~~AnnotatedWildcardType~~
 8. ~~Array~~
-9. Constructor
+9. ~~Constructor~~
 10. ~~Executable~~
 11. ~~Field~~
 12. ~~GenericArrayType~~
@@ -19,9 +19,9 @@
 17. MalformedParameterizedTypeException
 18. MalformedParametersException
 19. ~~Member~~
-20. Method
+20. ~~Method~~
 21. ~~Modifier~~
-22. Parameter
+22. ~~Parameter~~
 23. ~~ParameterizedType~~
 24. Proxy
 25. ReflectAccess
