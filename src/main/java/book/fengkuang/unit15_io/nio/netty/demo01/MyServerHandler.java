@@ -4,19 +4,25 @@ import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
-import java.nio.charset.Charset;
-import java.util.Date;
+import java.net.InetSocketAddress;
+import java.nio.charset.StandardCharsets;
+import java.time.LocalDateTime;
 
 public class MyServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+    public void channelRead(ChannelHandlerContext ctx, Object msg) {
         //接收msg消息
         ByteBuf buf = (ByteBuf) msg;
         byte[] msgByte = new byte[buf.readableBytes()];
         buf.readBytes(msgByte);
-        System.out.print(new Date() + "接收到消息：");
-        System.out.println(new String(msgByte, Charset.forName("GBK")));
+
+        InetSocketAddress socketAddress = (InetSocketAddress) ctx.channel().remoteAddress();
+        System.out.printf("[%s][%s]\n\t<<\n\t%s\n",
+                LocalDateTime.now(),
+                socketAddress.getHostString() + " " + socketAddress.getPort(),
+                new String(msgByte, StandardCharsets.UTF_8)
+        );
     }
 
 }
