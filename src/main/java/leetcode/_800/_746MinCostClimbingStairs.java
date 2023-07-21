@@ -1,4 +1,4 @@
-package leetcode.eighthundred;
+package leetcode._800;
 
 import leetcode.LeetCodeConstant;
 
