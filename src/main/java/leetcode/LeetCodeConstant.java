@@ -34,6 +34,8 @@ public interface LeetCodeConstant {
          * 广度优先搜索（BreadthFirstSearch）
           */
         BFS,
+        Tree,
+        BinarySearchTree,
         ;
     }
 
