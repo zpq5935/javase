@@ -32,6 +32,7 @@ public class JavaMethodAreaOOM {
                 }
             };
             enhancer.setCallback(callback1);
+            enhancer.create();
         }
     }
 
