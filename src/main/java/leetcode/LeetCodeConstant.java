@@ -36,6 +36,10 @@ public interface LeetCodeConstant {
         BFS,
         Tree,
         BinarySearchTree,
+        /**
+         * 回溯
+         */
+        BackTracking,
         ;
     }
 
