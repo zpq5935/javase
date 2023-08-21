@@ -40,6 +40,10 @@ public interface LeetCodeConstant {
          * 回溯
          */
         BackTracking,
+        /**
+         * 贪心
+         */
+        Greedy,
         ;
     }
 
