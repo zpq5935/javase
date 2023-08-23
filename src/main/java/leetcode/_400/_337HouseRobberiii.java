@@ -12,7 +12,7 @@ import java.util.Map;
  * <a href="https://leetcode.cn/problems/house-robber-iii/">337. 打家劫舍 III</a>
  */
 @LeetCodeConstant.Tag(tagEnums = {LeetCodeConstant.TagEnum.DynamicPrograming, LeetCodeConstant.TagEnum.Array,})
-public class _377HouseRobberiii {
+public class _337HouseRobberiii {
 
 
     private Solution solution;
